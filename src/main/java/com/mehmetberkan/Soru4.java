@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Soru4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] sayilar = new int[100]; // En fazla 100 sayı alabiliriz
+        int[] sayilar = new int[100];
         int toplam = 0;
         int sayiAdedi = 0;
 
