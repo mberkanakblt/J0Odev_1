@@ -13,13 +13,13 @@ public class Soru5 {
             Scanner scannerWebSite = new Scanner(url.openStream(), "UTF-8");
             while (scannerWebSite.hasNext()) {
                 String satir = scannerWebSite.nextLine();
-              //  System.out.println(satir);
+
                 if(satir.contains(sehir)){
-//                    System.out.println("Plaka Kodu " + satir.replace(" Ankara<br />",""));
-                    String[] parts = satir.split(" ");
+
+                    String[] str = satir.split(" ");
                     int index=0;
-                    if (parts.length > 0) {
-                        String plakaKodu = parts[0];
+                    if (str.length > 0) {
+                        String plakaKodu = str[0];
                         System.out.println("Plaka Kodu: " + satir.replace("<br />","").replace(sehir,""));
                         break;
                     }
