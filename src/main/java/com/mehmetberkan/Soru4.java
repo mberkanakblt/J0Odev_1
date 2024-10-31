@@ -10,11 +10,11 @@ public class Soru4 {
         int sayiAdedi = 0;
 
         while (toplam <= 100) {
-            System.out.print("0-100 arasında bir sayı girin: ");
+            System.out.print("0-100 arasinda bir sayi giriniz: ");
             int sayi = scanner.nextInt();
 
             if (sayi < 0 || sayi > 100) {
-                System.out.println("Girilen sayı sınır dışında bir sayıdır.");
+                System.out.println("Girilen sayi sinir disinnda bir sayidir.");
                 continue; // Devam ettirir..
             }
 
@@ -46,11 +46,12 @@ public class Soru4 {
             for (int i = 0; i < sayiAdedi; i++) {
                 System.out.print(sayilar[i] + " ");
             }
-            System.out.println("\nEn buyuk sayi: " + enBuyuk);
+            System.out.println();
+            System.out.println("En buyuk sayi: " + enBuyuk);
             System.out.println("En kucukk sayi: " + enKucuk);
             System.out.println("Ortalama: " + ortalama);
         } else {
-            System.out.println("Hicbir geçerli sayı girilmedi.");
+            System.out.println("Geçerli sayi girilmedi.");
         }
 
 
